@@ -1,4 +1,4 @@
-# THE-ANTHILL
+# THEANTHILL
 
 This is public project page for the app.theanthill.io web application.
 
