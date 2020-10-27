@@ -1,0 +1,116 @@
+extends layout.pug
+
+block content
+	include _navigation-menu.pug
+
+	script(src='//code.jquery.com/jquery-3.5.1.min.js')
+	section
+		div(class='container')
+			div(class='row')
+				div(class='col-sm-12')
+					if error_message
+						div(class="alert alert-danger  banner-top")
+							| <span class="glyphicon glyphicon-exclamation-sign"></span>
+							= error_message
+					if message
+						div(class="alert alert-danger  banner-top")
+							| <span class="glyphicon glyphicon-exclamation-sign"></span>
+							= message
+					if (flash_info && flash_info.length > 0)
+						div(class="alert alert-warning  banner-top")
+							| <span class="glyphicon glyphicon-exclamation-sign"></span>
+							= flash_info
+					if (flash_info2 && flash_info2.length > 0)
+						div(class="alert alert-warning  banner-top")
+							| <span class="glyphicon glyphicon-exclamation-sign"></span>
+							= flash_info2
+					if (flash_success && flash_success.length > 0)
+						div(class="alert alert-success banner-top")
+							| <span class="glyphicon glyphicon-ok"></span>
+
+								
+	section#content17-2h.content17.cid-sdi0OLsBAi
+		.container.mt-4.pt-4
+			.row.justify-content-center
+				.col-12.col-md-10
+					.section-head.align-center.mb-4
+						h3.mbr-section-title.mb-0.mbr-fonts-style.display-2
+							strong FAQ
+					#bootstrap-toggle.toggle-panel.accordionStyles.tab-content
+						.card.mb-3
+							#headingOne.card-header(role='tab')
+								a.collapsed.panel-title.text-black(role='button' data-toggle='collapse' data-core='' href='#collapse1_25' aria-expanded='false' aria-controls='collapse1')
+									h6.panel-title-edit.mbr-fonts-style.mb-0.display-7
+										strong What is ANTHILL?
+									span.sign.mbr-iconfont.mbri-arrow-down
+							#collapse1_25.panel-collapse.noScroll.collapse(role='tabpanel' aria-labelledby='headingOne')
+								.panel-body
+									p.mbr-fonts-style.panel-text.display-7
+										| Anthill is a collective of artists with a wide array of talents and skills. They work for each other to complete artistic projects without the exchange of traditional money. 
+										br
+						.card.mb-3
+							#headingTwo.card-header(role='tab')
+								a.collapsed.panel-title.text-black(role='button' data-toggle='collapse' data-core='' href='#collapse2_25' aria-expanded='false' aria-controls='collapse2')
+									h6.panel-title-edit.mbr-fonts-style.mb-0.display-7
+										strong How does ANTHILL work?
+									span.sign.mbr-iconfont.mbri-arrow-down
+							#collapse2_25.panel-collapse.noScroll.collapse(role='tabpanel' aria-labelledby='headingTwo')
+								.panel-body
+									p.mbr-fonts-style.panel-text.display-7
+										| There are basically two types of ants in the community: one that has an idea for a project and needs help from the others, and the one that has a particular skill and experience to help the first ant with the job.
+										br
+						.card.mb-3
+							#headingThree.card-header(role='tab')
+								a.collapsed.panel-title.text-black(role='button' data-toggle='collapse' data-core='' href='#collapse3_25' aria-expanded='false' aria-controls='collapse3')
+									h6.panel-title-edit.mbr-fonts-style.mb-0.display-7
+										strong How are ANTS rewarded for their work?
+									span.sign.mbr-iconfont.mbri-arrow-down
+							#collapse3_25.panel-collapse.noScroll.collapse(role='tabpanel' aria-labelledby='headingThree')
+								.panel-body
+									p.mbr-fonts-style.panel-text.display-7
+										| Anthill has its own internal economy based on blockchain tokens. For every job completed, ants are paid in ANT Tokens.
+										br
+						.card.mb-3
+							#headingThree.card-header(role='tab')
+								a.collapsed.panel-title.text-black(role='button' data-toggle='collapse' data-core='' href='#collapse4_25' aria-expanded='false' aria-controls='collapse4')
+									h6.panel-title-edit.mbr-fonts-style.mb-0.display-7
+										strong What can I do with ANT Tokens? 
+									span.sign.mbr-iconfont.mbri-arrow-down
+							#collapse4_25.panel-collapse.noScroll.collapse(role='tabpanel' aria-labelledby='headingThree')
+								.panel-body
+									p.mbr-fonts-style.panel-text.display-7
+										| Tokens can be used by members to buy services from other members, replacing traditional money, but it can do much more than that. Tokens offer holders governance (power to vote) and ownership of Anthill, as well as passive income proportionate to their involvement in the community. 
+										br
+						.card.mb-3
+							#headingThree.card-header(role='tab')
+								a.collapsed.panel-title.text-black(role='button' data-toggle='collapse' data-core='' href='#collapse5_25' aria-expanded='false' aria-controls='collapse5')
+									h6.panel-title-edit.mbr-fonts-style.mb-0.display-7
+										strong Why wouldn't you just pay me in $?
+									span.mbr-iconfont.mobi-mbri-arrow-down.mobi-mbri
+							#collapse5_25.panel-collapse.noScroll.collapse(role='tabpanel' aria-labelledby='headingThree')
+								.panel-body
+									p.mbr-fonts-style.panel-text.display-7
+										| Unlike traditional money you’d earn from services, ANT tokens holders will receive passive income in proportion to their holding. Once officially launched, the token can be exchanged for real money.    
+										br
+						.card.mb-3
+							#headingThree.card-header(role='tab')
+								a.collapsed.panel-title.text-black(role='button' data-toggle='collapse' data-core='' href='#collapse6_25' aria-expanded='false' aria-controls='collapse6')
+									h6.panel-title-edit.mbr-fonts-style.mb-0.display-7
+										strong What is the ultimate goal for ANTHILL members?
+									span.mbr-iconfont.mobi-mbri-arrow-down.mobi-mbri
+							#collapse6_25.panel-collapse.noScroll.collapse(role='tabpanel' aria-labelledby='headingThree')
+								.panel-body
+									p.mbr-fonts-style.panel-text.display-7
+										| To find creative solutions to their projects, bring their talent and skills to other projects, and monetize them using the collective power of the anthill.
+										br
+						.card.mb-3
+							#headingThree.card-header(role='tab')
+								a.collapsed.panel-title.text-black(role='button' data-toggle='collapse' data-core='' href='#collapse7_25' aria-expanded='false' aria-controls='collapse7')
+									h6.panel-title-edit.mbr-fonts-style.mb-0.display-7
+										strong Where do I start?
+									span.mbr-iconfont.mobi-mbri-arrow-down.mobi-mbri
+							#collapse7_25.panel-collapse.noScroll.collapse(role='tabpanel' aria-labelledby='headingThree')
+								.panel-body
+									p.mbr-fonts-style.panel-text.display-7
+										| Each new member will be able to create a profile that highlights their best skills, links to previous works and post bounties(jobs) that they need help with. New members will also receive some free tokens to spend within the community.
+										br
