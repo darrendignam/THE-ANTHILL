@@ -1,4 +1,8 @@
-// config/sendgrid_email.js
+/* *********************************************************************** *
+	Main module for sending emails.
+	The rest of the application uses this module 
+	to sent emails when it needs to.
+ * *********************************************************************** */
 
 var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
 var helper = require('sendgrid').mail;
